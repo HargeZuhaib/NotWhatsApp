@@ -43,6 +43,14 @@ public class Users {
         return mail;
     }
 
+    public String getUsedID() {
+        return usedID;
+    }
+
+    public void setUsedID(String usedID) {
+        this.usedID = usedID;
+    }
+
     public void setMail(String mail) {
         this.mail = mail;
     }
@@ -55,13 +63,7 @@ public class Users {
         this.password = password;
     }
 
-    public String getUsedID() {
-        return usedID;
-    }
 
-    public void setUsedID(String usedID) {
-        this.usedID = usedID;
-    }
 
     public String getLastMessage() {
         return lastMessage;

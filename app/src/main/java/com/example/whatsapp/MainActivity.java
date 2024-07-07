@@ -15,6 +15,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.whatsapp.Adapters.FragmentsAdapter;
 import com.example.whatsapp.databinding.ActivityMainBinding;
 import com.google.android.gms.auth.api.identity.SignInCredential;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
     FirebaseAuth auth;
+
     private static final int REQ_ONE_TAP = 2;
     private boolean showOneTapUI = true;
 
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         auth = FirebaseAuth.getInstance();
+        binding.viewPager.setAdapter(new FragmentsAdapter(getSupportFragmentManager()));
+        binding.tablayout.setupWithViewPager(binding.viewPager);
 
 
         setContentView(binding.getRoot());
