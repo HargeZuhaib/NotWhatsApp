@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "411352179294",
+    "firebase_url": "https://notwhatsapp-535fa-default-rtdb.firebaseio.com",
+    "project_id": "notwhatsapp-535fa",
+    "storage_bucket": "notwhatsapp-535fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411352179294:android:9ae959a29097de38da4acf",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFyLlfZdq2CKywSkCkfmt2SXgKRMNXgKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
