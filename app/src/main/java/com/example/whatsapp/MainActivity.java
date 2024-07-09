@@ -56,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.settings) {
-            Toast.makeText(this, "Settings Clicked.", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this , SettingsActivity.class);
+            startActivity(intent);
             return true;
         }
         else if (id == R.id.logout) {
@@ -65,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+
+
         // Handle other cases
         return super.onOptionsItemSelected(item);
     }
